@@ -1,11 +1,15 @@
 # Project  Cirrus Logic 542x ISA video card
+This project is a fork of [542x_ISA](https://github.com/matt1187/542x_ISA) with some tweaks
+and additions to the PCB. Notable changes compared to original project:
+- made room on PCB to place the RAMs in SMT sockets
+- added Monitor ID option (static or by attached Monitor)
+
 Remaking from Cirrus Logic Databook  "CL-GD542X_Technical_Reference_Manual_Jan1994"
-![grafik](https://github.com/user-attachments/assets/78f533ff-fe82-43f0-a3d6-b032cc464d83)
+![grafik](https://github.com/HenrykRichter/CL-GD542x_ISA/blob/main/Pics/CL-GD542xISA_1280.jpg)
 
 # PCB Revision History 
-- 542xISA-000 initial draft
-- 542xISA-001 few minor bug fixing (IOCS16/MEMCS16 swap, added output filter)
-- 542xISA-002 change of XTAL Footprint to HC-49  (not tested, only change of layout is  XTAL-footprint)
+- forked from revision 001
+- CL-GD542x-003 initial upload
 
 # Feartures
 - Cirrus Logic (CL-GD5422-5429) video chipset (5420 is not recommend for this design)
@@ -14,7 +18,7 @@ Remaking from Cirrus Logic Databook  "CL-GD542X_Technical_Reference_Manual_Jan19
 - 80 MHz integrated RAMDAC (GD5429: 86 MHz )
 - Win 3.1, Win9x, Win NT 3.51 & 4 driver available
 - cheap GD542x VLB card as compoment donor.
-- cheap 2 layer platine layout 
+- cheap 2 layer PCB layout 
   
 # Issues 
 - some 542x chip has vertical noise/stripe on TFT. (It is not pcb issuses)
@@ -24,8 +28,9 @@ Remaking from Cirrus Logic Databook  "CL-GD542X_Technical_Reference_Manual_Jan19
 # notes
 - GD5420/22/24 support only 1 MB DRAM
 - U11 & U12  is first 1 MB , U13/14 is seconds MB (except 5420, only U12 and U14 )
-- all component with  followed ID is config strap (R55, R57, R59, R61, R63, R69, R73) place all except R69
-- R15 don't place, if you using interal XTAL oscillator (Y1 , C39,C40)
+- all component with  followed ID is config strap (R55, R57, R59, R61, R63, R69, R73) place all **except** R55, R69
+- R15 don't place, if you using interal XTAL oscillator (Y1/Y2 , C39,C40)
+- Place only one of Y1/Y2 (either SMD **or** HC-49)
 - SPI-EEPROM is optional.
 
  
