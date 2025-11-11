@@ -37,14 +37,10 @@ Remaking from Cirrus Logic Databook  "CL-GD542X_Technical_Reference_Manual_Jan19
 
 # Bill of material
 
-- [![csv-file 001 ](https://github.com/matt1187/542x_ISA/blob/main/Gerber/542xISA-001.csv)]
-- [![csv-file 002(not tested)](https://github.com/matt1187/542x_ISA/blob/main/Gerber/542xISA-002.csv)]
-- [Config strap (R55, R57, R59, R61, R63, R69, R73) Place all resistor except R69
-- [![Gerber file 001](https://github.com/matt1187/542x_ISA/blob/main/Gerber/542xISA-001.zip)]
-- [![Gerber file 002(not tested)](https://github.com/matt1187/542x_ISA/blob/main/Gerber/542xISA-002.zip)]
+- see BOM subfolder for an iBOM file
 
 # driver & ROM 
-- [![Cirrus Logic ROM generic for all GD542x,](https://github.com/matt1187/542x_ISA/blob/main/ROM/cirrus%205428.zip)]
+- [![Cirrus Logic ROM generic for all GD542x,](https://github.com/HenrykRichter/CL-GD542x_ISA/blob/main/ROM/cirrus%205428.zip)]
 
 
 
@@ -58,5 +54,6 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+
 
 
