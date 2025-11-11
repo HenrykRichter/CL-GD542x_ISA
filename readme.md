@@ -11,7 +11,7 @@ Remaking from Cirrus Logic Databook  "CL-GD542X_Technical_Reference_Manual_Jan19
 - forked from revision 001
 - CL-GD542x-003 initial upload
 
-# Feartures
+# Features
 - Cirrus Logic (CL-GD5422-5429) video chipset (5420 is not recommend for this design)
 - good chocie video card for ISA bus platform
 - up to 2 MB DRAM
@@ -23,7 +23,7 @@ Remaking from Cirrus Logic Databook  "CL-GD542X_Technical_Reference_Manual_Jan19
 # Issues 
 - some 542x chip has vertical noise/stripe on TFT. (It is not pcb issuses)
 - ROM from  cirrus logic video card as donor is not usable (hi/lo byte is seperated to difference address space, like address line "A0 and A14" is swapped)
-
+- in some cases, the GD542x will boot in Monochrome mode. See [here](https://forum.vcfed.org/index.php?threads/trident-card-that-thinks-colour-monitor-is-monochrome.79054) for a fix.
 
 # notes
 - GD5420/22/24 support only 1 MB DRAM
@@ -58,4 +58,5 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+
 
